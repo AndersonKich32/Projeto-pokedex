@@ -1,0 +1,10 @@
+.box-type{
+    width: 100px;
+    min-height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: #3c3e44;
+    font-size: 12px;
+}

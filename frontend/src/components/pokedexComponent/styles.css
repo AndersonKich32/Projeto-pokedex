@@ -1,0 +1,184 @@
+.pokedex-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: red;
+}
+
+.pokedex-container .pokedex{
+    position: relative;
+    border: 5px solid #fff;
+    background: #424242;
+    animation-delay: 3s;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-name: open;
+}
+
+@keyframes open {
+    0% {
+        width: 0;
+        height: 0;
+       
+    }
+    50% {
+        width: 40%;
+        height: 96%;
+       
+    }
+    100% 
+    {
+        width: 95%;
+        height: 96%;
+    }
+}
+
+.pokedex-container .pokedex .avatar,
+.pokedex-container .pokedex .pokebolaPosition{
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.pokedex-container .pokedex .pokebolaPosition{
+    z-index: 99;
+}
+
+.pokedex-container .pokedex .avatar{
+    width: 180px;
+    height:180px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cardPosition{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    opacity: 0;
+    transform: translate(-15%, -50%);
+    transition-delay: 2s; 
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;  
+}
+
+.preview{
+    opacity: 1;
+    transform: translate(-50%, -50%); 
+}
+
+.pokedex .painel{
+    position: absolute;
+    top: 137px;
+    right: 95px;
+    width: 150px;
+    height: 280px;
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    animation-delay: 5s;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-name: see;
+}
+
+@keyframes see {
+    0% {
+        opacity: 0;
+       
+    }
+    100% 
+    {
+        opacity: 1;
+    }
+}
+
+.pokedex .painel form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around; 
+}
+
+.pokedex .painel form input{
+    width: 90%;
+    height: 30px;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    background: #03640E;
+}
+
+.pokedex .painel form .button{
+   margin-top: 5px;
+   width: 70px;
+   height: 60px;
+   outline:none;
+   background-color: #5778f3;
+   color: #fff;
+   border-bottom: 5px solid #3e4caf;
+   transition: 0.1s;
+}
+
+.pokedex .painel form .button:hover{
+    border-bottom-width: 0;
+    margin-top: 3px;
+}
+
+.pokedex .painel form .button:disabled{
+    background-color: #6b80cc;
+}
+
+.rectangle-top,
+.rectangle-botton{
+    position: absolute;
+    height: 0px;
+    width: 353px;
+    border: 99px solid;
+    left: 50%;
+}
+
+.rectangle-top{
+    border-color: #fff transparent transparent transparent;
+    transform: translate(-50%, -53%);
+    top: 16%;
+}
+
+.rectangle-botton{
+    border-color:  transparent transparent #fff transparent;
+    transform: translate(-50%, -47%);
+    top: 84%;
+}
+
+.rectangle-top::before,
+.rectangle-botton::before{
+    content: "";
+    width: 349px;
+    height: 0px;
+    border: 96px solid;
+    position: absolute;
+    left: 50%;
+}
+
+.rectangle-top::before{
+    border-color: #f00 transparent transparent transparent;
+    transform: translate(-50%, -53%);
+    top: 16%;
+}
+
+.rectangle-botton::before{
+    border-color: transparent transparent #f00 transparent;
+    transform: translate(-50%, -47%);
+    top: 50%;
+}
+

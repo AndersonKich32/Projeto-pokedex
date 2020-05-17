@@ -1,0 +1,134 @@
+.card-container{  
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(157,77,31);
+    background: linear-gradient(45deg, rgba(157,77,31,1) 20%, rgba(255,196,58,1) 70%, rgba(200,171,171,0.6502976190476191) 100%);
+    border-radius: 8px;
+    width: 300px;
+    height: 450px; 
+}
+
+.card-container .card{
+    position: relative;
+    width: 270px;
+    height: 420px;
+    display: flex;
+    background: rgb(235,225,206);
+    background: linear-gradient(45deg, rgba(235,225,206,1) 0%, rgba(242,186,108,1) 54%, rgba(218,203,185,1) 100%);
+    z-index: 1;
+}
+
+.card-container .card .id,
+.card-container .card .xp{
+    position: absolute;
+    top: 5%;
+    width: 70px;
+    height: 20px;
+    font-size: 16px;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    margin: 0;
+}
+
+.card-container .card .id{
+    left: 16%;
+}
+
+.card-container .card .xp{
+    left: 85%;  
+}
+
+.card-container .card .name{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #111113;
+    margin-bottom: 50px;
+}
+
+.card-container .card .imgBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 35%;  
+    background-color: rgb(157,77,31);
+    background-color: linear-gradient(45deg, rgba(157,77,31,1) 20%, rgba(255,196,58,1) 70%, rgba(200,171,171,0.6502976190476191) 100%);
+}
+
+.card-container .card .imgBox img{
+    width: 100px;
+    height: 100px;
+}
+
+.card-container .card .container-type{
+    position: absolute;
+    top: 32%;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 25px;
+}
+
+.card-container .card .list-status{
+    width: 100%;
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-container .card .ability-container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.card-container .card .ability-container::before{
+    content: "";
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 1px;
+    background: #111113;
+}
+
+.card-container .card .ability-container h3{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #111113;
+}
+
+.ability-position{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+
+

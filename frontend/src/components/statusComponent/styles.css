@@ -1,0 +1,24 @@
+.item-status-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 20px;
+    color: #3c3e44;
+    font-size: 12px;
+}
+
+.item-status-container .item-status-name,
+.item-status-container .item-status-number{
+    height: 20px;
+    display: flex;
+    align-items: center;
+    width: 45%;
+}
+
+.item-status-container .item-status-name{
+    justify-content: flex-end;
+}
+
+.item-status-container .item-status-number{
+    justify-content: flex-start;
+}
